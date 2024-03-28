@@ -5,8 +5,8 @@
       <v-row justify="center" class="mt-8">
         <v-col cols="11" md="8">
           <div class="text-center">
-            <h1 class="text-h3 font-weight-bold">The Donation Store for Your Gameserver </h1>
-            <div class="mx-15 text-h6 font-weight-light mt-2 mb-n1">Built for Every Gameserver: Empower Your Community
+            <h1 class="text-h3 font-weight-bold gradient-heading">The Donation Store for Your Gameserver </h1>
+            <div class="mx-15 text-md-h6 text-subtitle-1 font-weight-light mt-4 mb-n1">Built for Every Gameserver: Empower Your Community
               with a
               Shop
             </div>
@@ -127,7 +127,7 @@
         </v-col>
       </v-row>
 
-      <v-row justify="center" class="mt-4 mb-8">
+      <v-row justify="center" class="mt-4 mb-15">
         <v-card rounded="xl" class="pa-1 darken-3" color="#1976D2">
           <v-btn rounded="xl" size="large" flat color="primary" target="_blank" class="btn-grow"
                  href="https://app.vyhub.net?register=true">
@@ -222,5 +222,11 @@ const games = [
 
 .game-card:hover {
   box-shadow: 0px 0px 15px rgba(33, 150, 243, .5);
+}
+
+.gradient-heading {
+  background: -webkit-linear-gradient(rgb(187, 222, 251), rgba(33, 150, 243, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>

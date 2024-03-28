@@ -1,10 +1,10 @@
 <template>
   <v-footer height="40" app>
       <a href="https://vyhub.net" target="_blank" class="social-link mr-2" title="VyHub">
-        <IconLoader style="height: 20px; width: 20px" name="vyhub" class="mt-2"/>
+        <IconLoader style="height: 20px; width: 20px" name="vyhub" class="mt-2 social-link-2"/>
       </a>
       <a href="https://discord.com/invite/QycQpd2AQP" target="_blank" class="social-link mx-2 d-inline-block" title="VyHub Discord">
-        <IconLoader style="height: 20px; width: 20px" name="discord" class="mt-2"/>
+        <IconLoader style="height: 20px; width: 20px" name="discord" class="mt-2 social-link-2"/>
       </a>
     <div class="d-flex align-center">
       <a
@@ -54,6 +54,14 @@ const items = [
 
 <style scoped lang="sass">
 .social-link :deep(.v-icon)
+  color: rgba(var(--v-theme-on-background), var(--v-disabled-opacity))
+  text-decoration: none
+  transition: .2s ease-in-out
+
+  &:hover
+    color: rgba(25, 118, 210, 1)
+
+.social-link-2
   color: rgba(var(--v-theme-on-background), var(--v-disabled-opacity))
   text-decoration: none
   transition: .2s ease-in-out
