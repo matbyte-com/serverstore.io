@@ -25,12 +25,21 @@
 
       <v-row justify="center">
         <v-col>
-          <div class="pa-2 rounded-lg grow" style="background-color: #13222e">
+          <div class="pa-2 rounded-lg grow" style="background-color: #13222e; min-height: 300px" >
             <a href="https://demo.vyhub.net" title="Demo">
               <v-img
                   class="rounded mx-auto" alt="Screenshot of Demo Shop"
                   src="https://cdn.vyhub.net/serverstore.io/banner.png"
-              />
+              >
+                <template v-slot:placeholder>
+                  <div class="d-flex align-center justify-center fill-height">
+                    <v-progress-circular
+                        color="grey-lighten-4"
+                        indeterminate
+                    />
+                  </div>
+                </template>
+              </v-img>
             </a>
           </div>
         </v-col>
