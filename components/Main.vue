@@ -26,10 +26,12 @@
       <v-row justify="center">
         <v-col>
           <div class="pa-2 rounded-lg grow" style="background-color: #13222e">
-            <v-img
-                class="rounded mx-auto"
-                src="https://cdn.vyhub.net/serverstore.io/banner.png"
-            />
+            <a href="https://demo.vyhub.net" title="Demo">
+              <v-img
+                  class="rounded mx-auto" alt="Screenshot of Demo Shop"
+                  src="https://cdn.vyhub.net/serverstore.io/banner.png"
+              />
+            </a>
           </div>
         </v-col>
       </v-row>
