@@ -28,7 +28,7 @@
           <div class="pa-2 rounded-lg grow" style="background-color: #13222e; min-height: 300px" >
             <a href="https://demo.vyhub.net" title="Demo">
               <v-img
-                  class="rounded mx-auto" alt="Screenshot of Demo Shop"
+                  class="rounded main-image mx-auto" alt="Screenshot of Demo Shop"
                   src="https://cdn.vyhub.net/serverstore.io/banner.png"
               >
                 <template v-slot:placeholder>
@@ -239,5 +239,14 @@ const games = [
   background: -webkit-linear-gradient(rgb(187, 222, 251), rgba(33, 150, 243, 0.5));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.main-image {
+  filter: brightness(75%);
+  transition: all 0.2s ease-in-out;
+}
+
+.main-image:hover {
+  filter: brightness(100%);
 }
 </style>
