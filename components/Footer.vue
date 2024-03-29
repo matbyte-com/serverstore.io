@@ -33,6 +33,14 @@
       >
         &copy; {{ (new Date()).getFullYear() }} <span class="d-none d-sm-inline-block">Serverstore by VyHub</span>
       </a>
+      |
+      <a
+          class="text-decoration-none on-surface"
+          href="https://vyhub.net/legal"
+          target="_blank"
+      >
+        Imprint
+      </a>
     </div>
   </v-footer>
 </template>
@@ -49,6 +57,11 @@ const items = [
     icon: `mdi-github`,
     href: 'https://github.com/matbyte-com',
   },
+  {
+    title: 'VyHub Documentation',
+    icon: 'mdi-book-open',
+    href: 'https://docs.vyhub.net',
+  }
 ]
 </script>
 
