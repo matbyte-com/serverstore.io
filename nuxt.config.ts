@@ -3,9 +3,6 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import svgLoader from 'vite-svg-loader'
 
 export default defineNuxtConfig({
-  app: {
-    baseURL: '/serverstore.io/',
-  },
   devtools: { enabled: true },
   build: {
     transpile: ['vuetify'],
