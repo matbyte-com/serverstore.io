@@ -66,6 +66,7 @@
               color="surface-variant"
               rounded="lg"
               variant="text"
+              class="feature-card"
           >
             <div class="d-flex align-center pa-3">
               <v-icon class="v-card-item__prepend pr-0 mr-0">
@@ -248,5 +249,13 @@ const games = [
 
 .main-image:hover {
   filter: brightness(100%);
+}
+
+.feature-card i {
+  transition: color 0.3s ease; /* Transition effect on color property */
+}
+
+.feature-card:hover i {
+  color: rgba(25, 118, 210, 1)
 }
 </style>
