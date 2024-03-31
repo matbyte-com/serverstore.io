@@ -9,4 +9,7 @@
   </div>
 </template>
 <script setup lang="ts">
+useSeoMeta({
+  ogImage: '/og-image.jpg'
+})
 </script>
