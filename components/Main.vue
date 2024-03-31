@@ -6,7 +6,8 @@
         <v-col cols="11" md="8">
           <div class="text-center">
             <h1 class="text-h3 font-weight-bold gradient-heading">The Donation Store for Your Gameserver </h1>
-            <div class="mx-15 text-md-h6 text-subtitle-1 font-weight-light mt-4 mb-n1">Built for Every Gameserver: Empower Your Community
+            <div class="mx-15 text-md-h6 text-subtitle-1 font-weight-light mt-4 mb-n1">Built for Every Gameserver:
+              Empower Your Community
               with a
               Shop
             </div>
@@ -25,10 +26,11 @@
 
       <v-row justify="center">
         <v-col>
-          <div class="pa-2 rounded-lg grow" style="background-color: #13222e; min-height: 300px" >
-            <a href="https://demo.vyhub.net" title="Demo">
+          <a href="https://demo.vyhub.net" title="Demo">
+            <div class="pa-2 rounded-lg grow position-relative" style="background-color: #13222e; min-height: 300px"
+                 @mouseenter="isHovering = true" @mouseout="isHovering = false">
               <v-img
-                  class="rounded main-image mx-auto" alt="Screenshot of Demo Shop"
+                  class="rounded mx-auto" alt="Screenshot of Demo Shop"
                   src="https://cdn.vyhub.net/serverstore.io/banner.png"
               >
                 <template v-slot:placeholder>
@@ -40,8 +42,16 @@
                   </div>
                 </template>
               </v-img>
-            </a>
-          </div>
+              <v-overlay
+                  :model-value="!isHovering"
+                  class="align-center justify-center text-white"
+                  contained
+                  scrim="#121212"
+              >
+                <span class="text-h3">Demo</span>
+              </v-overlay>
+            </div>
+          </a>
         </v-col>
       </v-row>
 
@@ -154,6 +164,8 @@
 </template>
 
 <script setup>
+
+const isHovering = ref(false)
 
 const features = [
   {
